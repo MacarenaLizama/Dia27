@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 3</title>
+    <style>
+        .caja{
+            width: 100px;
+            height: 100px;
+            margin:20px;
+            border: 3px solid black;
+            display:inline-block;
+            background-color: {{ color }};
+            
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenido!</h1>
+    
+    {% for i in range(x) %}
+    <div class="caja"></div>
+    {% endfor %}
+
+</body>
+</html>
+
