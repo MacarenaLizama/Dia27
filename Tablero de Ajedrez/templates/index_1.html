@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Ajedrez</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='/index.css')}}">
+</head>
+<body>
+    
+    <h1 class="titulo">***Checkerboard***</h1>
+    {% for i in range(num1) %}
+    <table class="tablero">
+        <tr>
+            <td class="caja1"></td>
+            <td class="caja2"></td>
+            <td class="caja1"></td>
+            <td class="caja2"></td>
+            <td class="caja1"></td>
+            <td class="caja2"></td>
+            <td class="caja1"></td>
+            <td class="caja2"></td>
+        </tr>
+        <tr>
+            <td class="caja2"></td>
+            <td class="caja1"></td>
+            <td class="caja2"></td>
+            <td class="caja1"></td>
+            <td class="caja2"></td>
+            <td class="caja1"></td>
+            <td class="caja2"></td>
+            <td class="caja1"></td>
+        </tr>
+    </table>
+    {% endfor %}
+
+</body>
+</html

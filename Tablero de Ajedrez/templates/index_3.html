@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Ajedrez</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='/index.css')}}">
+</head>
+<body>
+    
+    <h1 class="titulo">***Checkerboard***</h1>
+    <div></div>
+    <h3> El primer número ingresado son las filas y el segundo las columnas</h3>
+
+    
+    {% for i in range(x) %}
+        <div class="fila">
+            {% for j in range(y) %}
+                {% set clase = 'caja1' if (i+j)%2==0 else 'caja2' %}
+                <div class="caja {{ clase }}"></div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+
+</body>
+</html

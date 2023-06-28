@@ -1,0 +1,31 @@
+.caja1{
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+}
+.caja2{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+}
+.tablero{
+    padding: 0%;
+    display:flex;
+    justify-content: center;
+}
+.titulo{
+    text-align: center;
+}
+.fila{
+    display:flex;
+    justify-content: center;
+}
+.caja{
+    width: 80px;
+    height: 80px;
+}
+h3{
+    text-align: center;
+}
