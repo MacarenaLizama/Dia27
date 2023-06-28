@@ -1,0 +1,11 @@
+th, td{
+    text-align: center;
+} 
+#tabla{
+    width: 400px;
+    height: 200px;
+    margin-left: 30%;
+}
+#letra{
+    color:rgb(219, 171, 14);
+}
